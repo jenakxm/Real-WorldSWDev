@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea03846c-553e-49a4-a9d6-7899372c6e9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jenakxm/BankTransactionAnalyzerSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jenakxm/Main.java" afterDir="false" />
+    <list default="true" id="ea03846c-553e-49a4-a9d6-7899372c6e9d" name="Changes" comment="feat: 1월 입출금 내역 합계 계산기 하드코딩">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jenakxm/BankStatementCSVParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jenakxm/BankTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jenakxm/BankTransactionAnalyzerSimple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jenakxm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jenakxm/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +68,23 @@
       <option name="presentableId" value="Default" />
       <updated>1700134941280</updated>
     </task>
+    <task id="LOCAL-00001" summary="chore: 빌드 파일">
+      <option name="closed" value="true" />
+      <created>1700141491173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700141491173</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 1월 입출금 내역 합계 계산기 하드코딩">
+      <option name="closed" value="true" />
+      <created>1700141540225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700141540225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +97,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: 빌드 파일" />
+    <MESSAGE value="feat: 1월 입출금 내역 합계 계산기 하드코딩" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 1월 입출금 내역 합계 계산기 하드코딩" />
   </component>
 </project>
