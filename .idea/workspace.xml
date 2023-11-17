@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea03846c-553e-49a4-a9d6-7899372c6e9d" name="Changes" comment="feat: 1월 입출금 내역 합계 계산기 하드코딩">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jenakxm/BankStatementCSVParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jenakxm/BankTransaction.java" afterDir="false" />
+    <list default="true" id="ea03846c-553e-49a4-a9d6-7899372c6e9d" name="Changes" comment="chore: 클래스명 변경">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jenakxm/BankTransactionAnalyzerSimple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jenakxm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jenakxm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jenakxm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jenakxm/BankStatementAnalyzer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -56,6 +59,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "jenakxm"
   }
 }]]></component>
@@ -84,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700141540225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: 뱅크트랜잭션 도메인 생성 및 파서 객체 생성으로 코드 분리">
+      <option name="closed" value="true" />
+      <created>1700145797610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145797610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: 빌드 파일" />
     <MESSAGE value="feat: 1월 입출금 내역 합계 계산기 하드코딩" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 1월 입출금 내역 합계 계산기 하드코딩" />
+    <MESSAGE value="feat: 뱅크트랜잭션 도메인 생성 및 파서 객체 생성으로 코드 분리" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 뱅크트랜잭션 도메인 생성 및 파서 객체 생성으로 코드 분리" />
   </component>
 </project>

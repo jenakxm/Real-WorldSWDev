@@ -8,7 +8,7 @@ import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class BankStatementAnalyzer {
     private static final String RESOURCES = "src/main/resources";
 
     public static void main(final String... args) throws IOException {
