@@ -5,21 +5,17 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Month;
-import java.util.ArrayList;
 import java.util.List;
 
 public class BankStatementAnalyzer {
     private static final String RESOURCES = "src/main/resources";
     private static final BankStatementCSVParser bankStatementParser = new BankStatementCSVParser();
 
-    public static void main(final String... args) throws IOException {
-        final BankStatementCSVParser bankStatementCSVParser = new BankStatementCSVParser();
-
-        final String fileName = args[0];
+    public void analyze(final String fileName, final BankStatementParser bankStatementParser) throws IOException {
         final Path path = Paths.get(RESOURCES + fileName);
         final List<String> lines = Files.readAllLines(path);
 
-        final List<BankTransaction> bankTransactions = bankStatementCSVParser.parseLinesFromCSV(lines);
+        final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
         collectSummary(bankStatementProcessor);
@@ -39,6 +35,4 @@ public class BankStatementAnalyzer {
                 + bankStatementProcessor.calculateTotalForCategory("Salary"));
 
     }
-
-
 }
