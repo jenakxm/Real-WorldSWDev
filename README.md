@@ -17,3 +17,9 @@ Cohesion (응집도)
 Coupling (결합도)
 - 한 기능이 다른 클래스에 얼마나 의존(참조)하고 있는지
 - 낮은 결합도 -> 높은 유연성 <- 인터페이스를 사용하자
+
+Code Coverage (코드 커버리지)
+- 소스코드를 얼마나 테스트했는지
+- 70~90% 목표
+- 관련 도구 : JaCoCo, Emma, Cobertura
+- branch coverage를 사용할 것
