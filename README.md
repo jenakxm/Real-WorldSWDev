@@ -23,3 +23,6 @@ Code Coverage (코드 커버리지)
 - 70~90% 목표
 - 관련 도구 : JaCoCo, Emma, Cobertura
 - branch coverage를 사용할 것
+
+OCP : Open/Closed Principle 개방/폐쇄 원칙
+- 유연성과 유지보수성
