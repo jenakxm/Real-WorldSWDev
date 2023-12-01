@@ -1,6 +1,7 @@
 package jenakxm;
 
 import java.time.Month;
+import java.util.ArrayList;
 import java.util.List;
 
 public class BankStatementProcessor {
@@ -9,6 +10,14 @@ public class BankStatementProcessor {
 
     public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
         this.bankTransactions = bankTransactions;
+    }
+
+    public double summarizeTransaction(final BankTransactionSummarizer bankTransactionSummarizer) {
+        double result = 0;
+        for (final BankTransaction bankTransaction : bankTransactions) {
+            result = bankTransactionSummarizer.summarize(result, bankTransaction);
+        }
+        return result;
     }
 
     public double calculateTotalAmount() {
@@ -20,23 +29,23 @@ public class BankStatementProcessor {
     }
 
     public double calculateTotalInMonth(final Month month) {
-        double total = 0;
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getDate().getMonth() == month) {
-                total += bankTransaction.getAmount();
-            }
-        }
-        return total;
+        return summarizeTransaction((acc, bankTransaction) ->
+                bankTransaction.getDate().getMonth() == month ? acc + bankTransaction.getAmount() : acc);
     }
 
-    public double calculateTotalForCategory(final String category) {
-        double total = 0;
+    public List<BankTransaction> findTransactions(final BankTransactionFilter bankTransactionFilter) {
+        final List<BankTransaction> result = new ArrayList<>();
+
         for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getDescription().equals(category)) {
-                total += bankTransaction.getAmount();
+            if (bankTransactionFilter.test(bankTransaction)) {
+                result.add(bankTransaction);
             }
         }
-        return total;
+        return result;
+    }
+
+    public List<BankTransaction> findTransactionsGreaterThanEqual(final int amount){
+        return findTransactions(bankTransaction -> bankTransaction.getAmount() >= amount);
     }
 
 }
