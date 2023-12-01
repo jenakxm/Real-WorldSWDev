@@ -25,4 +25,6 @@ Code Coverage (코드 커버리지)
 - branch coverage를 사용할 것
 
 OCP : Open/Closed Principle 개방/폐쇄 원칙
+- 기존의 코드를 변경하지 않으면서 기능을 추가할 수 있도록 설계
 - 유연성과 유지보수성
+- interface를 쓰자
